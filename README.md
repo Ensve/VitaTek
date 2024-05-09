@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Case for Frontend-utvikler: Design & Implementering av landingsside
+### Oppgave (2-4 timer):
 
-## Getting Started
+Lag en landingsside i React og beskriv de valgene du tar. Siden må bestå av
+følgende seksjoner:
+1. Above the fold content
+2. Bestillingsskjema
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funksjoner & spesifikasjoner:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Above the fold content:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- En bakbrunn som passer.
+- En fengende overskrift.
+- En undertekst med en kort beskrivelse.
+- En CTA (Call to Action) knapp som navigerer brukeren til bestillingsskjemaet.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+#### Bestillingsskjema:
 
-To learn more about Next.js, take a look at the following resources:
+  Felter:
+- Fullt navn
+- E-postadresse
+- Postadresse (Gate, By, Postnummer, Land)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  Validering:
+- Fullt navn: Påkrevd og bør være alfanumerisk.
+- E-post: Påkrevd og må følge riktig e-postformat.
+- Postadresse: Alle felt er obligatoriske
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Merk: Skjemaet trenger ikke å sendes inn, men bør vise en alert/melding når dataene er
+  validert til å være gyldig/ugyldig. Med andre ord bør en feilmelding vises om ikke dataen er
+  fylt inn korrekt.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Tekniske krav:
+- Bruk React.js.
+- Bruk hvilken som helst stylingmetode (CSS-i-JS, SCSS, CSS-moduler osv.)
+- Du kan bruke blioteker for skjemavalidering, men unngå store UI-rammeverk.
+- Siden må være responsiv.
+
+
+  Innsending:
+- Last opp koden din til et offentlig GitHub-repo.
+- Distribuer landingssiden din til en hosting-plattform etter eget valg (f.eks. Vercel, Netlify).
+- Sammen med link til ditt repo, lever et dokument som beskriver:
+
+1. Hvorfor du plasserte elementer der du gjorde det.
+2. Eventuelle CRO-konsepter du brukte.
+3. Tekniske valg du gjorde og hvorfor.
+
+Evalueringskriterier:
+- Cleanliness and structure i koden.
+- Responsivitet og design av landingssiden.
+- Effektiv implementering av skjemavalidering.
+- Gjennomtenkthet i hensyn til CRO og forklaringer.
+- Bonus: Eventuelle ekstra kreative eller tekniske elementer som forbedrer
+  brukeropplevelsen. 
