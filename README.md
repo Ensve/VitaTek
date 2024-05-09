@@ -13,7 +13,7 @@ Denne landingssiden er designet som en løsning på en case gitt ved intervju. D
 
 ## API-integrasjon
 
-Jeg brukte **[freetestapi.com](https://freetestapi.com/apis/users)** for å hente ut brukere. API-et gir et sett med eksempeldatakunder, slik at vi kan simulere og presentere et bestillingsskjema med ekte data.
+Jeg brukte **[freetestapi.com](https://freetestapi.com/apis/users)** for å hente ut brukere til reviews.
 
 ## Funksjoner og spesifikasjoner
 
