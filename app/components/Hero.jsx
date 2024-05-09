@@ -21,7 +21,7 @@ const Hero = () => {
                 />
             <div className='relative flex flex-1 flex-col xl:w-1/2'>
                 <h1 className='py-4 text-gray-700 xl:max-w-[70%]'>Elevate Your Health with Precision Science</h1>
-                <p className='py-4 text-gray-700 font-medium xl:max-w-[520px]'>Explore the purity of nature fused with scientific rigor at VitaTek. Begin your journey to enhanced well-being today.</p>
+                <p className='py-4 text-gray-700 font-medium xl:max-w-[520px]'>Explore the purity of nature fused with scientific rigor at PureVita. Begin your journey to enhanced well-being today.</p>
                 <div className="flex w-full flex-col gap-3 py-4 sm:flex-row">
                     <Button title="Try for free" href="#try" variant='bg-green-600' border='border-green-600' full/>
                 </div>
