@@ -1,6 +1,5 @@
 'use client';
 import React, {useState} from 'react';
-import Button from "@/app/components/common/buttons/Button";
 import Image from "next/image";
 import {validateForm} from "@/app/utils/validation";
 import OrderForm from "@/app/components/form/OrderForm";
@@ -20,9 +19,15 @@ const TryNow = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setError(validateForm(formData));
+        const errors = validateForm(formData);
+        console.log("Validation Errors:", errors);
 
-        if (Object.keys(error).length > 0) {
+        setError(errors);
+
+        if (Object.keys(errors).length === 0) {
+            console.log("Form submitted with data:", formData);
+            alert('Form submitted successfully!');
+
             setFormData({
                 firstName: '',
                 lastName: '',
@@ -31,11 +36,6 @@ const TryNow = () => {
                 city: '',
                 zip: ''
             });
-            alert('Form submitted successfully!');
-            console.log("Submitted form: ", formData);
-        }
-        else {
-            return;
         }
     };
 
