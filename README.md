@@ -1,6 +1,6 @@
 # VitaTek Landingsside
 
-Denne landingssiden er designet som en løsning på en case gitt ved intervju. Det fiktive selskapet **VitaTek** spesialiserer seg på å selge kosttilskudd som er naturlig fusjonert med vitenskapelig forskning. Målet med denne siden er å introdusere potensielle kunder for VitaTeks verdi og oppmuntre dem til å gå videre til bestillingsskjemaet.
+Denne landingssiden er designet som en løsning på en case gitt ved intervju. Det fiktive selskapet **PureVita** spesialiserer seg på å selge kosttilskudd som er naturlig fusjonert med vitenskapelig forskning. Målet med denne siden er å introdusere potensielle kunder for VitaTeks verdi og oppmuntre dem til å gå videre til bestillingsskjemaet.
 
 **[Live Løsning](https://vita-tek-endres-projects-8ddc022f.vercel.app/)**
 
