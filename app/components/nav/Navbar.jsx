@@ -31,7 +31,7 @@ const Navbar = () => {
         <>
         <nav className="bg-[#ecf0f3] relative mx-auto w-full px-6 py-5 flexBetween max-w-[1440px] z-[100] lg:px-20 3xl:px-0">
             <div className="flex h-full w-full items-center justify-between px2 2xl:px-16 tracking-wide">
-                <Link href='#home'>
+                <Link href='/'>
                     <h2 className='text-gray-700'>Pure<span className='text-green-600'>Vita</span></h2>
                 </Link>
 
