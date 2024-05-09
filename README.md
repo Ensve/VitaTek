@@ -1,61 +1,46 @@
-# Case for Frontend-utvikler: Design & Implementering av landingsside
-### Oppgave (2-4 timer):
+# VitaTek Landingsside
 
-Lag en landingsside i React og beskriv de valgene du tar. Siden må bestå av
-følgende seksjoner:
-1. Above the fold content
-2. Bestillingsskjema
+Denne landingssiden er designet som en løsning på en case gitt ved intervju. Det fiktive selskapet **VitaTek** spesialiserer seg på å selge kosttilskudd som er naturlig fusjonert med vitenskapelig forskning. Målet med denne siden er å introdusere potensielle kunder for VitaTeks verdi og oppmuntre dem til å gå videre til bestillingsskjemaet.
 
+**[Live Løsning](https://vita-tek-endres-projects-8ddc022f.vercel.app/)**
 
-## Funksjoner & spesifikasjoner:
+## Teknologier brukt
 
-#### Above the fold content:
+- **[Next.js](https://nextjs.org/)** og **[React](https://react.dev/)**: For en skalerbar og effektiv utviklingsopplevelse.
+- **[TailwindCSS](https://tailwindcss.com/)**: For rask og effektiv styling av komponenter. Egendefinerte klasser som `flexEnd`, `flexCenter`, `flexBetween`, og `flexStart` ble brukt for å håndtere flex-egenskaper effektivt.
+- **[Framer Motion](https://www.framer.com/motion/)**: For å legge til animasjoner som øker sidens visuelle appell og styrker profesjonaliteten.
+- **[Vercel](https://vercel.com/home)**: For hosting av den ferdige landingssiden.
 
-- En bakbrunn som passer.
-- En fengende overskrift.
-- En undertekst med en kort beskrivelse.
-- En CTA (Call to Action) knapp som navigerer brukeren til bestillingsskjemaet.
+## API-integrasjon
 
+Jeg brukte **[freetestapi.com](https://freetestapi.com/apis/users)** for å hente ut brukere. API-et gir et sett med eksempeldatakunder, slik at vi kan simulere og presentere et bestillingsskjema med ekte data.
 
-#### Bestillingsskjema:
+## Funksjoner og spesifikasjoner
 
-  Felter:
-- Fullt navn
-- E-postadresse
-- Postadresse (Gate, By, Postnummer, Land)
+### Above the Fold Content
 
+- **En bakgrunn som passer.**  
 
-  Validering:
-- Fullt navn: Påkrevd og bør være alfanumerisk.
-- E-post: Påkrevd og må følge riktig e-postformat.
-- Postadresse: Alle felt er obligatoriske
+- **En Fengende overskrift.**  
 
+- **En undertekst med en kort beskrivelse.**  
 
-- Merk: Skjemaet trenger ikke å sendes inn, men bør vise en alert/melding når dataene er
-  validert til å være gyldig/ugyldig. Med andre ord bør en feilmelding vises om ikke dataen er
-  fylt inn korrekt.
+- **En CTA (Call to Action) knapp som navigerer brukeren til bestillingsskjemaet.**  
 
+### Bestillingsskjema
 
-## Tekniske krav:
-- Bruk React.js.
-- Bruk hvilken som helst stylingmetode (CSS-i-JS, SCSS, CSS-moduler osv.)
-- Du kan bruke blioteker for skjemavalidering, men unngå store UI-rammeverk.
-- Siden må være responsiv.
+- **Felter:**  
+  Skjemaet inkluderer feltene fullt navn, e-postadresse og postadresse (gate, by, postnummer, land). Alle felter valideres på klientsiden for å gi umiddelbar tilbakemelding om feil eller mangler.
 
+- **Validering:**
+  - **Fullt navn:** Påkrevd og bør være alfanumerisk.
+  - **E-post:** Påkrevd og må følge riktig e-postformat.
+  - **Postadresse:** Alle felt er obligatoriske.
 
-  Innsending:
-- Last opp koden din til et offentlig GitHub-repo.
-- Distribuer landingssiden din til en hosting-plattform etter eget valg (f.eks. Vercel, Netlify).
-- Sammen med link til ditt repo, lever et dokument som beskriver:
-
-1. Hvorfor du plasserte elementer der du gjorde det.
-2. Eventuelle CRO-konsepter du brukte.
-3. Tekniske valg du gjorde og hvorfor.
-
-Evalueringskriterier:
-- Cleanliness and structure i koden.
-- Responsivitet og design av landingssiden.
-- Effektiv implementering av skjemavalidering.
-- Gjennomtenkthet i hensyn til CRO og forklaringer.
-- Bonus: Eventuelle ekstra kreative eller tekniske elementer som forbedrer
-  brukeropplevelsen. 
+### Evaluering
+- **Cleanliness and structure i koden.**
+- **Responsivitet og design**
+- **Effektiv skjemavalidering**
+- **Gjennomtenkt CRO** (konverteringsoptimalisering)
+- **Bonus:** Eventuelle ekstra kreative eller tekniske elementer som forbedrer
+  brukeropplevelsen.
